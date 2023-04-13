@@ -1257,12 +1257,14 @@
         </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top" class="MyBtn">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="MyBtn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
     <script>
-        let mybutton = document.getElementById('myBtn');
+        const mybutton = document.getElementById("myBtn");
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
-            if (document.body.scrollTop > 4000 || document.documentElement.scrollTop > 4000) {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 mybutton.style.display = "block";
             } else {
                 mybutton.style.display = "none";

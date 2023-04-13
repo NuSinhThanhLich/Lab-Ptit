@@ -1146,7 +1146,7 @@ html {
     padding-right: 10px;
 }
 
-.MyBtn {
+#myBtn {
     display: none;
     position: fixed;
     bottom: 60px;
@@ -1163,4 +1163,9 @@ html {
     text-align: center;
     line-height: 30px;
     animation: modalFadeIn ease 3s;
-}
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  

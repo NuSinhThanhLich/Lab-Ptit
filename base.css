@@ -1,0 +1,41 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #ee2761;
+    --border-color: #dbdbdb;
+   
+    --navbar-height: 34px;
+    --header-height: 150px;
+}
+
+.grid {
+    width: 1240px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62,5%;
+    line-height: 1.6rem;
+    /* font-family: 'Roboto', sans-serif; */
+    box-sizing: border-box;
+}
+
+/* .container8_text {
+    cursor: default;
+    position: absolute;
+    z-index: 1;
+    color: var(--white-color);
+    padding-top: 70px;
+    padding-left: 50px;
+}
+
+.container8_img {
+    position: relative;
+    height: 400px;
+} */

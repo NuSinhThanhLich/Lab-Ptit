@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="base.css">
+    <title> Netmark online Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar_1">
+                    <ul class="header_navbar_list">
+                        <li class="header_navbar_item header_navbar_item_separate">
+                            <span class="header_navbar_item_name">Welcome to Netmark online Store</span>
+                        </li>
+    
+                        <li class="header_navbar_item header_navbar_item_separate pointer">
+                            <i class="bi bi-truck"></i>
+                            <span >Track your order</span>
+                            
+                        </li>
+    
+                        <li class="header_navbar_item pointer">
+                            <i class="bi bi-envelope"></i>
+                            <span >demo@gmail.com</span>
+                        </li>
+                    </ul>
+    
+                    <ul class="header_navbar_list tab_res">
+                        
+                        <li class="header_navbar_item header_navbar_item_separate pointer">
+                            <img src="https://media.istockphoto.com/id/880562092/vector/great-britain-united-kingdom-flag.jpg?s=612x612&w=0&k=20&c=z6Qg_O-2pIcreAK3Fb8X003h2HRIFiRWNT8cg7hDfFo=" alt="" class="header_navbar_item_img">
+                            <span >English</span>
+                            <i class="fa fa-angle-down edit_padding1"></i>
+                        </li>
+
+                       
+                        <li class="header_navbar_item pointer">
+                             <img src="data:image/png;base64,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" alt="" class="header_navbar_item_img">
+                            <span >$ US Dollar</span>
+                            <i class="fa fa-angle-down edit_padding1"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="grid">
+                <div class="header_search">
+                    <div class="header_logo pointer">
+                        <img src="./assests/Screenshot 2023-04-07 000606.png" alt="">
+                    </div>
+
+                    <div class="header_search_input">
+                        <div class="header_search_select">
+                            <div class="header_search_select_label1">
+                                <span class="header_search_select_label"> All Categories</span>
+                                <i class="fa fa-angle-down edit_padding2"></i>
+                            </div>
+                        </div>
+
+                        <div class="header_search_input_warp">
+                            <input type="text" class="header_search_input1" placeholder="Keyword here...">
+                        </div>
+
+                        <button class="header_search_button">
+                            <i class="bi bi-search header_search_button_icon"></i>
+                        </button>
+                    </div>
+
+                    <ul class="header_search_list">
+                        <li class="header_search_list_item">
+                            <i class="bi bi-person mid1"></i>
+                            <div class="header_search_list_name">My Account</div>
+                        </li>
+                        <li class="header_search_list_item">
+                            <i class="bi bi-heart mid2"></i>
+                            <span class="header_search_list_notice">02</span>
+                            <div class="header_search_list_name">Wish List</div>
+                        </li>
+                        <li class="header_search_list_item">
+                            <i class="bi bi-cart3 mid3"></i>
+                            <span class="header_search_list_notice">02</span>
+                            <div class="header_search_list_name">My Cart</div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="border"></div>
+
+            <div class="grid">
+                <div class="header_option">
+                    <div class="header_option_list">
+                        <div class="header_option_list_item">Home
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="header_option_list_item">Shop
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="header_option_list_item">About US</div>
+                        <div class="header_option_list_item">Blog
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="header_option_list_item">Categories</div>
+                        <div class="header_option_list_item">Pages
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="header_option_list_item">Contact</div>
+                    </div>
+
+                    <div class="header_option_list">
+                        <i class="bi bi-lightbulb"></i>
+                        Special up to 60% Off all item
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_list_cover">
+                <div class="cover_des">
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Container -->
+        <div class="container1">
+            <div class="container1_warp">
+              
+                    <img src="./assests/img/faq-bg-transparent-1.png" alt="" class="container1_img_edit">
+            
+               <div class="container1_info">
+                    <div class="container1_info_nav">
+                        <i class="bi bi-collection"></i>
+                        New Collection
+                    </div>
+                    <div class="container1_info_title_1">
+                        <h1>The Great Fashion</h1>
+                    </div>
+                    <div class="container1_info_title_2">
+                        <h1>Collection 2022</h1>
+                    </div>
+                    <div class="container1_info_sale_1">
+                        Up to 40% Final Sale items
+                    </div>
+                    <div class="container1_info_sale_2">
+                        Caught in the Moment!
+                    </div>
+                    <div class="container1_info_button">
+                        <button class="container1_info_button_btn btn3 btn5">Show Collection
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="container2">
+                <div class="container2_box_b b">
+                    <ul class="container2_box_list">
+                        <li class="container2_box_item_dis">17% Discount</li>
+                        <li class="container2_box_item">
+                            <h6>Spring Collection</h6>
+                        </li>
+                        <li class="container2_box_item">
+                            <h6>Style To</h6>
+                        </li>
+                        <li class="container2_box_item_view">View Discounts
+                            <i class="bi bi-arrow-right color"></i>
+                        </li>
+                    </ul>
+                    <div class="container2_box_img">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMG1vZGVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="" class="box_img">
+                    </div>
+                </div>
+                <div class="container2_box_a a">
+                    <ul class="container2_box_list">
+                        <li class="container2_box_item_dis">25% Discount</li>
+                        <li class="container2_box_item">
+                            <h6>Leather Saddle</h6>
+                        </li>
+                        <li class="container2_box_item">
+                            <h6>Bag Style</h6>
+                        </li>
+                        <li class="container2_box_item_view">View Discounts
+                            <i class="bi bi-arrow-right color"></i>
+                        </li>
+                    </ul>
+                    <div class="container2_box_img">
+                        <img src="https://images.unsplash.com/photo-1566150906012-e6b6e89480fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGlmZnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="box_imga">
+                    </div>
+                </div>
+                <div class="container2_box_c c">
+                    <ul class="container2_box_list">
+                        <li class="container2_box_item_dis1">Shop Women</li>
+                        <li class="container2_box_item">
+                            <h6>Up to 70% Off and</h6>
+                        </li>
+                        <li class="container2_box_item">
+                            <h6>Free Shipping</h6>
+                        </li>
+                        <li class="container2_box_item_view">View Discounts
+                            <i class="bi bi-arrow-right color"></i>
+                        </li>
+                    </ul>
+                    <div class="container2_box_img">
+                        <img src="https://img.freepik.com/free-photo/beautiful-african-model-with-perfect-curly-hairs-elegant-orange-blouse-silk-pants-sitting-vintage-chair-beige-wall_273443-4089.jpg" alt="" class="box_imgc">
+                    </div>
+                </div>
+                <div class="container2_box_d d">
+                    <ul class="container2_box_list">
+                        <li class="container2_box_item_dis">Shop Women</li>
+                        <li class="container2_box_item">
+                            <h6>Free Shipping Over</h6>
+                        </li>
+                        <li class="container2_box_item">
+                            <h6>Order $120</h6>
+                        </li>
+                        <li class="container2_box_item_view">View Discounts
+                            <i class="bi bi-arrow-right color"></i>
+                        </li>
+                    </ul>
+                    <div class="container2_box_img">
+                        <img src="https://img.freepik.com/free-photo/stylish-european-brunette-woman-red-coat-black-hat-posing-white-wall_273443-4654.jpg" alt="" class="box_imgd">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid">
+            <div class="container3_head">
+                <h5 class="container3_head_title">
+                    <span>New Products</span>
+                </h5>
+                <div class="container3_border"></div>
+                <ul class="container3_head_list">
+                    <li class="container3_head_list_item">Featured</li>
+                    <li class="container3_head_list_item">Trending</li>
+                    <li class="container3_head_list_item">New Arrival</li>
+                </ul>
+            </div>
+
+            <div class="container3_product">
+                
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/1/p/2010/870/712/2/w/750/2010870712_1_1_1.jpg?ts=1680703816570" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Bomber Women</div>
+                            <div class="product_item_name">
+                                <h6>Crop Textures Bomber</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$49.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$69.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                               <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/1/p/4661/770/800/17/w/750/4661770800_1_1_1.jpg?ts=1680705255311" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Bomber Women</div>
+                            <div class="product_item_name">
+                                <h6>Satin Effect Crop Bomber</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$49.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$69.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/1/p/3339/975/800/2/w/750/3339975800_1_1_1.jpg?ts=1680704831687" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Bomber Women</div>
+                            <div class="product_item_name">
+                                <h6>Chopped Bomber Jacket</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$49.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$69.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/1/p/6147/074/406/2/w/750/6147074406_1_1_1.jpg?ts=1680693863064" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Jacket Women</div>
+                            <div class="product_item_name">
+                                <h6>Chopped Denim Jacket</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$49.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$59.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/1/p/3046/081/704/2/w/750/3046081704_1_1_1.jpg?ts=1680161997735" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Jacket Women</div>
+                            <div class="product_item_name">
+                                <h6>Basic Linen Blend Jacket</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$69.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$89.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                
+                
+            </div>
+
+            <div class="container3_product">
+                
+                <div class="grid_col2">
+                    <div class="product_item">
+                        <div class="product_item_img">
+                            <p class="product_item_sale">Sale</p>
+                            <img src="https://static.zara.net/photos///2023/V/0/1/p/3046/081/505/2/w/750/3046081505_1_1_1.jpg?ts=1680088744230" alt="" class="product_item_img_edit">
+                        </div>
+                        <div class="product_item_cate">Jacket Women</div>
+                        <div class="product_item_name">
+                            <h6>Basic Linen Blend Jacket</h6>
+                        </div>
+                        <div class="product_item_price">
+                            <span class="product_item_price_new">$69.99</span>
+                            <div class="product_item_price_separate"> - </div>
+                            <span class="product_item_price_old">$89.99</span>
+                        </div>
+                        <span class="product_item_rate">
+                           <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <div class="product_item_action">
+                            <div class="product_item_action_add">
+                                <i class="bi bi-cart3"></i>
+                                <div class="product_item_action_add_cart">
+                                    + Add to cart
+                                </div>
+                            </div>
+                            <div class="product_item_action_heart">
+                                <i class="bi bi-suit-heart"></i>
+                            </div>
+                            <div class="product_item_action_eye">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="grid_col2">
+                    <div class="product_item">
+                        <div class="product_item_img">
+                            <p class="product_item_sale">Sale</p>
+                            <img src="https://static.zara.net/photos///2023/V/0/1/p/4341/731/800/2/w/608/4341731800_2_2_1.jpg?ts=1676565077290" alt="" class="product_item_img_edit">
+                        </div>
+                        <div class="product_item_cate">Bomber Women</div>
+                        <div class="product_item_name">
+                            <h6>Faux Leather Bomber</h6>
+                        </div>
+                        <div class="product_item_price">
+                            <span class="product_item_price_new">$79.99</span>
+                            <div class="product_item_price_separate"> - </div>
+                            <span class="product_item_price_old">$89.99</span>
+                        </div>
+                        <span class="product_item_rate">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <div class="product_item_action">
+                            <div class="product_item_action_add">
+                                <i class="bi bi-cart3"></i>
+                                <div class="product_item_action_add_cart">
+                                    + Add to cart
+                                </div>
+                            </div>
+                            <div class="product_item_action_heart">
+                                <i class="bi bi-suit-heart"></i>
+                            </div>
+                            <div class="product_item_action_eye">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            
+                <div class="grid_col2">
+                    <div class="product_item">
+                        <div class="product_item_img">
+                            <p class="product_item_sale">Sale</p>
+                            <img src="https://static.zara.net/photos///2023/V/0/1/p/8197/072/406/17/w/750/8197072406_2_6_1.jpg?ts=1678455427503" alt="" class="product_item_img_edit">
+                        </div>
+                        <div class="product_item_cate">Jacket Women</div>
+                        <div class="product_item_name">
+                            <h6>Ripped Trf Denim Overshirt</h6>
+                        </div>
+                        <div class="product_item_price">
+                            <span class="product_item_price_new">$69.99</span>
+                            <div class="product_item_price_separate"> - </div>
+                            <span class="product_item_price_old">$69.99</span>
+                        </div>
+                        <span class="product_item_rate">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <div class="product_item_action">
+                            <div class="product_item_action_add">
+                                <i class="bi bi-cart3"></i>
+                                <div class="product_item_action_add_cart">
+                                    + Add to cart
+                                </div>
+                            </div>
+                            <div class="product_item_action_heart">
+                                <i class="bi bi-suit-heart"></i>
+                            </div>
+                            <div class="product_item_action_eye">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="grid_col2">
+                    <div class="product_item">
+                        <div class="product_item_img">
+                            <p class="product_item_sale">Sale</p>
+                            <img src="https://static.zara.net/photos///2023/V/0/1/p/2903/811/403/2/w/750/2903811403_1_1_1.jpg?ts=1679411842846" alt="" class="product_item_img_edit">
+                        </div>
+                        <div class="product_item_cate">Bomber Women</div>
+                        <div class="product_item_name">
+                            <h6>Chop Textured Bomber</h6>
+                        </div>
+                        <div class="product_item_price">
+                            <span class="product_item_price_new">$99.99</span>
+                            <div class="product_item_price_separate"> - </div>
+                            <span class="product_item_price_old">$119.99</span>
+                        </div>
+                        <span class="product_item_rate">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <div class="product_item_action">
+                            <div class="product_item_action_add">
+                                <i class="bi bi-cart3"></i>
+                                <div class="product_item_action_add_cart">
+                                    + Add to cart
+                                </div>
+                            </div>
+                            <div class="product_item_action_heart">
+                                <i class="bi bi-suit-heart"></i>
+                            </div>
+                            <div class="product_item_action_eye">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="grid_col2">
+                    <div class="product_item">
+                        <div class="product_item_img">
+                            <p class="product_item_sale">Sale</p>
+                            <img src="https://static.zara.net/photos///2023/V/0/1/p/2855/347/775/6/w/750/2855347775_1_1_1.jpg?ts=1679416699258" alt="" class="product_item_img_edit">
+                        </div>
+                        <div class="product_item_cate">Coat Women</div>
+                        <div class="product_item_name">
+                            <h6>Oversized Buttoned Coat</h6>
+                        </div>
+                        <div class="product_item_price">
+                            <span class="product_item_price_new">$139.99</span>
+                            <div class="product_item_price_separate"> - </div>
+                            <span class="product_item_price_old">$169.99</span>
+                        </div>
+                        <span class="product_item_rate">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <div class="product_item_action">
+                            <div class="product_item_action_add">
+                                <i class="bi bi-cart3"></i>
+                                <div class="product_item_action_add_cart">
+                                    + Add to cart
+                                </div>
+                            </div>
+                            <div class="product_item_action_heart">
+                                <i class="bi bi-suit-heart"></i>
+                            </div>
+                            <div class="product_item_action_eye">
+                                <i class="bi bi-eye"></i>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            
+            
+        </div>
+
+        <div class="grid">
+            <div class="container4">
+                <ul class="container4_detail">
+                    <li class="container4_detail_dis">Hurry up and Get 25% Discount</li>
+                    <li class="container4_detail_title">
+                        Deals Of The Day
+                    </li>
+                    <li class="container4_detail_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li class="container4_detail_des">sed do eiusmod tempor incididunt ut labore</li>
+                    <li class="container4_detail_time">
+                        <div class="container4_detail_time_item">
+                            <div class="container4_detail_time_number">-183</div>
+                            <div class="container4_detail_time_day">
+                                <span class="time_center_1">Days</span>
+                            </div>
+                        </div>
+                        <p class="time_separate">:</p>
+                        <div class="container4_detail_time_item_1">
+                            <div class="container4_detail_time_number">-11</div>
+                            <div class="container4_detail_time_day">
+                                <span  class="time_center">Hrs</span>
+                            </div>
+                        </div>
+                        <p class="time_separate">:</p>
+                        <div class="container4_detail_time_item_1">
+                            <div class="container4_detail_time_number">-12</div>
+                            <div class="container4_detail_time_day">
+                                <span  class="time_center">Mins</span>
+                            </div>
+                        </div>
+                        <p class="time_separate">:</p>
+                        <div class="container4_detail_time_item_1">
+                            <div class="container4_detail_time_number">-12</div>
+                            <div class="container4_detail_time_day">
+                                <span  class="time_center">Secs</span>
+                            </div>
+                        </div>
+                    </li>
+                    <div class="container4_btn">    
+                        <button class="container4_button_btn btn3 btn5">Show Collection
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                    </ul>
+                    <div class="container4_img">
+                        <img src="https://ilo.vn/wp-content/uploads/2021/08/main-1-blog-2.jpg" alt="" class="container4_img_edit">
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="grid">
+            <div class="container5">
+                <div class="container5_head">
+                    <div class="container3_head">
+                        <div class="container3_head_title">
+                            <span>Our Best Seller</span>
+                        </div>
+                        <div class="container3_border"></div>
+                    </div>
+                </div>
+
+                <div class="container5_product">
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/1/p/0858/035/250/2/w/750/0858035250_1_1_1.jpg?ts=1678377483225" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Shirts Women</div>
+                            <div class="product_item_name">
+                                <h6>Rib Linen T-Shirt</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$29.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$59.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                               <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/2/p/0761/505/803/2/w/750/0761505803_1_1_1.jpg?ts=1680261432867" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Hooded Men</div>
+                            <div class="product_item_name">
+                                <h6>Hooded Sweatshirt Vest</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$49.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$69.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                               <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/2/p/7901/444/526/2/w/750/7901444526_1_1_1.jpg?ts=1678351294180" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Sweatshirt Men</div>
+                            <div class="product_item_name">
+                                <h6>Technical Sweatshirt Zipper</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$45.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$59.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                               <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/2/p/0679/435/403/2/w/750/0679435403_1_1_1.jpg?ts=1679659554656" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Sweatshirt Men</div>
+                            <div class="product_item_name">
+                                <h6>Crew Neck Sweatshirt</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$45.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$49.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                               <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    <div class="grid_col2">
+                        <div class="product_item">
+                            <div class="product_item_img">
+                                <p class="product_item_sale">Sale</p>
+                                <img src="https://static.zara.net/photos///2023/V/0/2/p/3443/404/615/2/w/750/3443404615_1_1_1.jpg?ts=1673542218003" alt="" class="product_item_img_edit">
+                            </div>
+                            <div class="product_item_cate">Sweatshirt Men</div>
+                            <div class="product_item_name">
+                                <h6>Anchor Embroider Sweatshirt</h6>
+                            </div>
+                            <div class="product_item_price">
+                                <span class="product_item_price_new">$35.99</span>
+                                <div class="product_item_price_separate"> - </div>
+                                <span class="product_item_price_old">$59.99</span>
+                            </div>
+                            <span class="product_item_rate">
+                               <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                            <div class="product_item_action">
+                                <div class="product_item_action_add">
+                                    <i class="bi bi-cart3"></i>
+                                    <div class="product_item_action_add_cart">
+                                        + Add to cart
+                                    </div>
+                                </div>
+                                <div class="product_item_action_heart">
+                                    <i class="bi bi-suit-heart"></i>
+                                </div>
+                                <div class="product_item_action_eye">
+                                    <i class="bi bi-eye"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid">
+            <div class="container6">
+                <div class="container6_box">
+                    <ul class="container6_list_1">
+                        <li class="container6_list_item_pick">Pick Your Items</li>
+                        <li class="container6_list_item_title">
+                            <h6>Up to 25% Off Order Now</h6>
+                        </li>
+                        <li class="container6_list_item_link">
+                            <a href="" style="color: #66696a;">Shop now</a>
+                        </li>
+                    </ul>
+                    <div class="container6_img">
+                        <img src="https://vnluxurycdn.aicms.vn/vnlux-media/22/7/18/16342918592541286547668.jpg" alt="" class="container6_img_edit">
+                    </div>
+                </div>
+                <div class="container6_box">
+                    <ul class="container6_list_2">
+                        <li class="container6_list_item_pick">Special offer</li>
+                        <li class="container6_list_item_title">
+                            <h6>Up to 35% Off Order Now</h6>
+                        </li>
+                        <li class="container6_list_item_link">
+                            <a href="" style="color: #66696a;">Discover Now</a>
+                        </li>
+                    </ul>
+                    <div class="container6_img">
+                        <img src="https://media.glamourmagazine.co.uk/photos/61389ae63335302f7261b04a/16:9/w_1920,h_1080,c_limit/033_200217_glamour_anne_marie127-v1_sq.jpg" alt="" class="container6_img_edit">
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="gird">
+            <div class="container7">
+                <div class="container7_head">
+                    <div class="container3_head">
+                        <div class="container3_head_title">
+                            <span>Our Clients Say</span>
+                        </div>
+                        <div class="container3_border"></div>
+                    </div>
+                </div>
+
+                <div class="container7_clients">
+                    <div class="container7_client_1">
+                        <div class="container7_client_img">
+                            <span class="border_img">
+                                <img src="https://znews-stc.zdn.vn/static/topic/person/taylorswift.jpg" alt="" class="container7_client_img_edit">
+                            </span>
+                        </div>
+                        <div class="container7_client_name">
+                            <h6>Taylor Swift</h6>
+                        </div>
+                        <div class="container7_client_fas" style="font-size: 15px; color: #66696a; padding-bottom: 10px;">fashion</div>
+                        <div class="container7_client_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</div>
+                        <div class="container7_client_des">sed do eiusmod tempor incididunt ut labore et dolore</div>
+                        <div class="container7_client_des">magna aliqua. Ut enim ad minim</div>
+                        <div class="container7_client_rate">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="container7_client_2">
+                        <div class="container7_client_img">
+                            <img src="https://yt3.googleusercontent.com/ytc/AGIKgqOE2odAevc22sdCkQsZ3of410-sHBKA5ZhjeBxaZQ=s900-c-k-c0x00ffffff-no-rj" alt="" class="container7_client_img_edit">
+                        </div>
+                        <div class="container7_client_name">
+                            <h6>Bille Elish</h6>
+                        </div>
+                        <div class="container7_client_fas" style="font-size: 15px; color: #66696a; padding-bottom: 10px;">fashion</div>
+                        <div class="container7_client_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</div>
+                        <div class="container7_client_des">sed do eiusmod tempor incididunt ut labore et dolore</div>
+                        <div class="container7_client_des">magna aliqua. Ut enim ad minim</div>
+                        <div class="container7_client_rate">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="container7_client_3">
+                        <div class="container7_client_img">
+                            <img src="https://media.vneconomy.vn/w900/images/upload/2021/10/21/rem3.png" alt="" class="container7_client_img_edit">
+                        </div>
+                        <div class="container7_client_name">
+                            <h6>Ariana Grande</h6>
+                        </div>
+                        <div class="container7_client_fas" style="font-size: 15px; color: #66696a; padding-bottom: 10px;">fashion</div>
+                        <div class="container7_client_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</div>
+                        <div class="container7_client_des">sed do eiusmod tempor incididunt ut labore et dolore</div>
+                        <div class="container7_client_des">magna aliqua. Ut enim ad minim</div>
+                        <div class="container7_client_rate">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container7_dot">
+                    <i class="bi bi-circle-fill" style="padding-right: 10px; color: #ee2761;"></i>
+                    <i class="bi bi-circle" style="padding-right: 10px;  color: #ee2761"></i>
+                    <i class="bi bi-circle" style="padding-right: 10px;  color: #ee2761"></i>
+                    <i class="bi bi-circle" style="padding-right: 10px;  color: #ee2761"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="container8">
+                <div class="container8_text">
+                    <div class="container8_text_title" style="padding-bottom: 10px;">
+                        <h3 style="font-weight: 700;">Need Winter Boots?</h3>
+                    </div>
+                    <div class="container8_text_des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+                    <div class="container8_text_des">eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                    <div class="container8_text_des">enim ad minim veniam, quis nostrud exercitation</div>
+                    
+                    <div class="container8_btn">    
+                        <button class="container8_button_btn btn3 btn5">Shop Now
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="container8_img">
+                    <img src="https://cdn.accentuate.io/286597742786/1648754750504/classic_unisex_desktop_3_2000x560-min.jpg?v=0" alt="" class="container8_img_edit">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="container9">
+                <div class="container9_head">
+                    <div class="container3_head">
+                        <div class="container3_head_title">
+                            <span>From The Blog</span>
+                        </div>
+                        <div class="container3_border"></div>
+                    </div>
+                </div>
+
+                <div class="container9_trend">
+                    <div class="container9_trend_item_1">
+                        <div class="container9_trend_item_img">
+                            <img src="https://cdn.shopify.com/s/files/1/0607/5328/1272/products/O1CN01SgHdlG27uYfN4pBVy__2454197857-0-cib.jpg?v=1668468087" alt="" class="container9_trend_item_img_edit">
+                        </div>
+                        <div class="container9_trend_item_date">February 03, 2022</div>
+                        <div class="container9_trend_item_title">
+                            <h6 style="font-weight: 700;">Fashion Trends in 2021 Styles,</h6>
+                        </div>
+                        <div class="container9_trend_item_title">
+                            <h6 style="font-weight: 700; padding-bottom: 20px;">Colors, Accessories</h6>
+                        </div>
+                        <button class="container9_trend_item_btn">Read more</button>
+                    </div>
+
+                    <div class="container9_trend_item_2">
+                        <div class="container9_trend_item_img">
+                            <img src="https://isdi.in/blog/wp-content/uploads/2022/11/13.jpg" alt="" class="container9_trend_item_img_edit">
+                        </div>
+                        <div class="container9_trend_item_date">February 03, 2022</div>
+                        <div class="container9_trend_item_title">
+                            <h6 style="font-weight: 700;">Meet the Women Behind Cool</h6>
+                        </div>
+                        <div class="container9_trend_item_title">
+                            <h6 style="font-weight: 700; padding-bottom: 20px;">Ethical Label Refor</h6>
+                        </div>
+                        <button class="container9_trend_item_btn">Read more</button>
+                    </div>
+                    <div class="container9_trend_item_3">
+                        <div class="container9_trend_item_img">
+                            <img src="https://media.karousell.com/media/photos/products/2022/8/31/new_fashion_style_women_black__1661923774_eaa7d144_progressive.jpg" alt="" class="container9_trend_item_img_edit">
+                        </div>
+                        <div class="container9_trend_item_date">February 03, 2022</div>
+                        <div class="container9_trend_item_title">
+                            <h6 style="font-weight: 700;">Lauryn Hill Could Make Tulle Skirt</h6>
+                        </div>
+                        <div class="container9_trend_item_title">
+                            <h6 style="font-weight: 700; padding-bottom: 20px;">and Cowboy</h6>
+                        </div>
+                        <button class="container9_trend_item_btn">Read more</button>
+                    </div>
+                    <div class="container9_trend_item_4">
+                        <div class="container9_trend_item_img">
+                            <img src="https://cdn.shopify.com/s/files/1/0607/5328/1272/products/H0ed683d356724f9c86b7d656a6944544A.jpg?v=1671328224" alt="" class="container9_trend_item_img_edit">
+                        </div>
+                        <div class="container9_trend_item_date">February 03, 2022</div>
+                        <div class="container9_trend_item_title">
+                            <h6 style="font-weight: 700;">Fashion Trends in 2021 Styles,</h6>
+                        </div>
+                        <div class="container9_trend_item_title">
+                            <h6 style="font-weight: 700; padding-bottom: 20px;">Colors, Accessories</h6>
+                        </div>
+
+                            <button class="container9_trend_item_btn">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+
+    <!-- Footer -->
+    <div class="footer_background">
+        <div class="grid">
+            <div class="footer_main">
+                <div class="footer_main_about">
+                    <div class="footer_main_about_title">
+                        <h5 class="title">About Us</h5>
+                    </div>
+                    <div class="footer_main_about_del">
+                        Lorem ipsum dolor sit amet, consectetur adipisici ti elit
+                    </div>
+                    <div class="footer_main_about_del">
+                        seddo eiusmod tempor incididunt utlabore et dolore
+                    </div>
+                    <div class="footer_main_about_del">
+                        magna aliqua enim ad minim veniam quisnostrud
+                    </div>
+                    <div class="footer_main_about_del">
+                        exercitation ullamco
+                    </div>
+
+                    <div class="footer_main_about_follow">
+                        <h6>Follow Us</h6>
+                    </div>
+                    <div class="footer_main_about_follow_icon">
+                        <i class="bi bi-facebook" style="padding-right: 8px; cursor: pointer;"></i>
+                        <i class="bi bi-twitter" style="padding-right: 8px; cursor: pointer;"></i>
+                        <i class="bi bi-instagram" style="padding-right: 8px; cursor: pointer;"></i>
+                        <i class="bi bi-youtube" style="padding-right: 8px; cursor: pointer;"></i>
+                    </div>
+                </div>
+                <div class="footer_main_account">
+                    <div class="footer_main_account_title">
+                        <h5 class="title">My Account</h5>
+                    </div>
+                    <div class="footer_main_account_list">
+                        <div class="footer_main_account_item">My Account</div>
+                        <div class="footer_main_account_item">Shopping Cart</div>
+                        <div class="footer_main_account_item">Login</div>
+                        <div class="footer_main_account_item">Register</div>
+                        <div class="footer_main_account_item">Checkout</div>
+                        <div class="footer_main_account_item">Wishlist</div>
+                    </div>
+                </div>
+                <div class="footer_main_cate">
+                    <div class="footer_main_cate_title">
+                        <h5 class="title">Categories</h5>
+                    </div>
+                    <div class="footer_main_cate_list">
+                        <div class="footer_main_cate_item">About Us</div>
+                        <div class="footer_main_cate_item">Contact Us</div>
+                        <div class="footer_main_cate_item">Portfolio</div>
+                        <div class="footer_main_cate_item">Privacy Policy</div>
+                        <div class="footer_main_cate_item">Compare</div>
+                        <div class="footer_main_cate_item">Frequently</div>
+                    </div>
+                </div>
+                <div class="footer_main_ins">
+                    <div class="footer_main_ins_title">
+                        <h5 class="title">Instagram</h5>
+                    </div>
+                    <div class="footer_main_ins_list">
+                        <div class="footer_main_ins_list1">
+                            <div class="footer_main_ins_item">
+                                <img src="./assests/img/339271041_749473990163055_3999013276444932063_n.jpg" alt="" class="ins_img">
+                            </div>
+                            <div class="footer_main_ins_item">
+                                <img src="./assests/img/340203282_722312333016068_5502538400475850554_n.jpg" alt="" class="ins_img">
+                            </div>
+                            <div class="footer_main_ins_item">
+                                <img src="./assests/img/340290201_702939488242390_8554714791947478999_n.jpg" alt="" class="ins_img">
+                            </div>
+                        </div>
+                        <div class="footer_main_ins_list2">
+                            <div class="footer_main_ins_item">
+                                <img src="./assests/img/340601585_107708922297716_1035184780040052675_n.jpg" alt="" class="ins_img">
+                            </div>
+                            <div class="footer_main_ins_item">
+                                <img src="./assests/img/340573066_731778555149802_3735882588096625884_n.jpg" alt="" class="ins_img">
+                            </div>
+                            <div class="footer_main_ins_item">
+                                <img src="./assests/img/340700747_1265146017744024_4511411418653812054_n.jpg" alt="" class="ins_img" style="width: 47px;">
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="footer_main_letter">
+                    <div class="footer_main_letter_title">
+                        <h5 class="title">Newsletter</h5>
+                    </div>
+                    <div class="footer_main_letter_list">
+                        <div class="footer_main_letter_des" style="cursor: default;">
+                            Fill their seed open meat.
+                        </div>
+                        <div class="footer_main_letter_des" style="cursor: default;">
+                            great Saw image stl
+                        </div>
+                    </div>
+                    <div class="footer_main_letter_mail">
+                        <input type="Email Address" placeholder="Email Address" class="mail_input">
+                    </div>
+                    <button class="footer_main_letter_btn btn3 btn5">Subcribe</button>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <div class="footer_copyright_del">Copyright 2022 Surushi . All Rights Reverved.Design By Surushi
+                </div>
+                <div class="footer_copyright_pay">
+                    <div class="footer_copyright_pay_item">
+                        <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/092018/untitled-1_1.png?VGrsLCKvXvb0NaZmBstEVJ4HHjHrnBqe&itok=kspunqEu" alt="" class="pay_img">
+                    </div>
+                    <div class="footer_copyright_pay_item">
+                        <img src="https://logowik.com/content/uploads/images/787_mastercard.jpg" alt="" class="pay_img">
+                    </div>
+                    <div class="footer_copyright_pay_item">
+                        <img src="https://marketplacedesignoye.s3.ap-south-1.amazonaws.com/paypal%20logo%20png-icon-vector.png" alt="" class="pay_img" style="background-color: white;">
+                    </div>
+                    <div class="footer_copyright_pay_item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFHbwQwHizryXazsNrN2EjqQJedKvtWxkU_9NKdGHFGNjalJBnTIGUnSPYVDhmNoiZ6R0&usqp=CAU" alt="" class="pay_img">
+                    </div>
+                    <div class="footer_copyright_pay_item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3K_6sNwtzDWzZoYWjKfxQ0_kAIDSMGbxFPm2ZgQ9Jt_fwNWgi-eC-2Ft4XwIdQ21u3dI&usqp=CAU" alt="" class="pay_img">
+                    </div>
+                    <div class="footer_copyright_pay_item">
+                        <img src="https://w7.pngwing.com/pngs/287/978/png-transparent-visa-electron-credit-card-maestro-american-express-credit-card-text-payment-logo.png" alt="" class="pay_img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

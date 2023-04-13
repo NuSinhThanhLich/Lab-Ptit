@@ -343,6 +343,15 @@ html {
     color: var(--white-color);
 }
 
+@media only screen and (max-width: 850px) {
+    .contain_edit {
+        margin-top: 100px;
+    }
+    .contain_edit2 {
+        padding-right: 0px;
+    }
+}
+
 /* Container2 */
 
 .container2 {
@@ -1188,12 +1197,4 @@ html {
     background-color: #555; /* Add a dark-grey background on hover */
   }
   
-  @media only screen and (max-width: 880px) {
-    .display_none {
-        display: none;
-    }
-    .aligning_head {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+

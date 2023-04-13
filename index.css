@@ -1,13 +1,3 @@
-@media only screen and (max-width: 880px) {
-    .tab_res {
-        display: none;
-    }
-    .aligning_head {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 
 
 :root {
@@ -269,7 +259,25 @@ html {
     color: var(--primary-color);
 }
 
-/* Container */
+/* Media header */
+
+@media only screen and (max-width: 850px) {
+    .tablet_none {
+        display: none;
+    }
+    .aligning_head {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tablet_appear {
+        display: block !important;
+        font-size: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+    }
+}
+
 
 /* Container1 */
 
@@ -1146,6 +1154,17 @@ html {
     padding-right: 10px;
 }
 
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #myBtn {
     display: none;
     position: fixed;
@@ -1169,3 +1188,12 @@ html {
     background-color: #555; /* Add a dark-grey background on hover */
   }
   
+  @media only screen and (max-width: 880px) {
+    .display_none {
+        display: none;
+    }
+    .aligning_head {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
